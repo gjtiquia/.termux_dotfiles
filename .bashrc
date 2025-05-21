@@ -8,6 +8,9 @@ alias pull="~/.shortcuts/commit_pull_obsidian.sh"
 alias push="~/.shortcuts/backup_obsidian.sh"
 alias status="~/.shortcuts/status_obsidian.sh"
 
+# setup fzf
+eval "$(fzf --bash)"
+
 # dotfiles management
 DOTFILES_HOME=$HOME
 DOTFILES_GIT_DIR=.termux_dotfiles
