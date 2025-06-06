@@ -14,12 +14,24 @@ alias pull="~/.shortcuts/commit_pull_obsidian.sh"
 alias push="~/.shortcuts/backup_obsidian.sh"
 alias status="~/.shortcuts/status_obsidian.sh"
 
-# setup fzf
-eval "$(fzf --bash)"
-
 # dotfiles management
 DOTFILES_HOME=$HOME
 DOTFILES_GIT_DIR=.termux_dotfiles
 alias dotfiles="git --git-dir=$DOTFILES_HOME/$DOTFILES_GIT_DIR/ --work-tree=$DOTFILES_HOME"
+
+# setup fzf - keybindings
+eval "$(fzf --bash)"
+
+# setup yazi - y command
+function y() {
+    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+    yazi "$@" --cwd-file="$tmp"
+    IFS= read -r -d '' cwd < "$tmp"
+    [ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+    rm -f -- "$tmp"
+}
+
+# setup zoxide - z command
+eval "$(zoxide init bash)"
 
 
