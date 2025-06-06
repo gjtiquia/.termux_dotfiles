@@ -1,9 +1,12 @@
 echo "loading .bashrc..."
 
 alias so="source ~/.bashrc"
+alias vim="nvim"
+alias lg="lazygit"
+alias ff="fastfetch"
 alias q="exit"
 alias c="clear"
-alias lg="lazygit"
+alias cf="c && ff"
 
 # obsidian stuff
 alias obsidian="cd ~/storage/shared/Termux/obsidian-vault"
