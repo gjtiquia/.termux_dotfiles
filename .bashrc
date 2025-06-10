@@ -13,6 +13,8 @@ alias obsidian="cd ~/storage/shared/Termux/obsidian-vault"
 alias pull="~/.shortcuts/commit_pull_obsidian.sh"
 alias push="~/.shortcuts/backup_obsidian.sh"
 alias status="~/.shortcuts/status_obsidian.sh"
+alias pl=pull
+alias ph=push
 
 # dotfiles management
 DOTFILES_HOME=$HOME
