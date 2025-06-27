@@ -1,7 +1,7 @@
 echo "loading .bashrc..."
 
 alias so="source ~/.bashrc"
-alias vim="nvim"
+alias v="nvim"
 alias lg="lazygit"
 alias ff="fastfetch"
 alias q="exit"
