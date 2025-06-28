@@ -8,6 +8,9 @@ alias status="~/.shortcuts/status_obsidian.sh"
 alias pl=pull
 alias ph=push
 
+# ssh stuff
+alias sshd="~/.shortcuts/sshd.sh" # a wrapper around sshd showing more useful info (username and local ip)
+
 # proot stuff
 alias alpine="proot-distro login alpine"
 alias ubuntu="proot-distro login ubuntu"
