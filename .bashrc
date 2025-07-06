@@ -1,4 +1,4 @@
-echo "loading .bashrc..."
+# gjtiquia termux .bashrc
 
 # obsidian stuff
 alias obsidian="cd ~/storage/shared/Termux/obsidian-vault"
@@ -13,7 +13,7 @@ alias sshd="~/.shortcuts/sshd.sh" # a wrapper around sshd showing more useful in
 
 # proot stuff
 alias alpine="proot-distro login alpine"
-alias ubuntu="proot-distro login ubuntu"
+alias ubuntu="proot-distro login ubuntu -- su - gjtiquia"
 
 ####################
 
