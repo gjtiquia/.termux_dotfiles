@@ -14,6 +14,7 @@ alias sshd="~/.shortcuts/sshd.sh" # a wrapper around sshd showing more useful in
 # proot stuff
 alias alpine="proot-distro login alpine"
 alias ubuntu="proot-distro login ubuntu -- su - gjtiquia"
+alias u=ubuntu
 
 ####################
 
